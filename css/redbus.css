@@ -1,0 +1,868 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
+body {
+  background: white;
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#headerBlock {
+  width: 100%;
+  z-index: 1;
+  background: #d84f57;
+  position: fixed;
+}
+
+#headerBlock .container {
+  display: flex;
+  width: 1250px;
+  margin: 0px auto;
+  height: 55px;
+  align-items: center;
+}
+
+#headerBlock .container .leftNav {
+  flex: 1;
+}
+
+#headerBlock .container .rightNav {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* slider block css starts here */
+
+#sliderBlock img {
+  width: 100%;
+  height: 450px;
+}
+
+/*--------left menu block -----------------*/
+.leftNav section {
+  display: flex;
+}
+
+.leftNav ul,
+.rightNav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.leftNav ul li a,
+.rightNav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px;
+  font-size: 14px;
+  display: inline-block;
+}
+
+.logo {
+  flex: 1;
+}
+
+.leftmenu {
+  flex: 8;
+}
+
+.logo a {
+  background-image: url(../images/redbus_logo.png);
+  width: 80px;
+  height: 48px;
+  display: flex;
+  text-indent: -9999px;
+}
+
+.leftNav ul li a.active {
+  font-weight: 600;
+  border-bottom: 3px solid #fff;
+  transition: ease-in-out 0.6s;
+}
+
+.leftNav ul li a:hover {
+  color: #f9e7ea;
+}
+
+.fa-user-circle {
+  font-size: 35px;
+  font-weight: lighter;
+  line-height: 20px;
+}
+
+.fa-chevron-down {
+  margin: 0px 0px 0 6px;
+}
+
+.after_user_circle {
+  margin: -24px -19px 0 41px !important;
+  display: block;
+}
+
+#searchBusesBlock article {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  position: relative;
+  top: 50px;
+}
+
+#sliderBlock {
+  background-image: url("../images/safetyplus1.png");
+  background-position: top;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+}
+
+/*-------Attribute selector -----*/
+
+input[type="date"] {
+  font-size: 11px;
+  padding: 14px 30px !important;
+  border-right: none !important;
+}
+
+#sliderBlock article input {
+  padding: 14px 28px 16px 40px;
+  border: none;
+  border-right: 1.3px solid #888;
+  box-sizing: border-box;
+}
+
+#sliderBlock article button {
+  height: 46px;
+  width: 144px;
+  background: #d74f57;
+  box-sizing: border-box;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.city_icon {
+  position: relative;
+}
+
+.city_icon i {
+  position: absolute;
+  top: -14px;
+  left: 6px;
+  font-size: 20px;
+}
+
+/* latestUpdateBlock css starts here */
+#latestUpdateBlock {
+  display: flex;
+  justify-content: center;
+}
+
+#latestUpdateBlock article {
+  width: 530px;
+  height: 100px;
+  padding: 10px 20px 10px 20px;
+  box-sizing: border-box;
+  background-color: #fff5e5;
+  display: flex;
+  align-items: center;
+  margin-top: -40px;
+}
+
+#latestUpdateBlock article div:nth-child(1) {
+  flex: 2;
+}
+
+#latestUpdateBlock article div:nth-child(2) {
+  flex: 8;
+}
+
+#latestUpdateBlock article div:nth-child(3) {
+  flex: 3;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 94px;
+}
+
+.bell-on i {
+  color: #d74f57 !important;
+  font-size: 50px !important;
+}
+
+#latestUpdateBlock article h4 {
+  font-size: 15px;
+  margin: 0;
+  padding: 5px;
+}
+
+#latestUpdateBlock article p {
+  font-size: 12px;
+  margin: 0;
+  padding: 5px;
+  font-weight: lighter;
+}
+
+#latestUpdateBlock article button {
+  width: 130px;
+  height: 25px;
+  background: #d74f57;
+  color: #fff;
+  padding: 4px;
+  border: none;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+/*----on time css block starts here -----*/
+#OnTimeBlock > article {
+  width: 1122px;
+  border: 1px solid #cccccc;
+  background: #ffffff;
+  margin: 60px auto;
+  display: flex;
+  height: 320px;
+}
+
+.leftOnDiv {
+  flex: 1;
+}
+.leftOnDiv p {
+  background: url("../images/ic-shield-red-big.png");
+  height: 88px;
+  width: 88px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  margin: 20px;
+}
+
+.rightOnDiv {
+  flex: 8;
+}
+
+.img3_hero,
+.img4_Hero {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-size: contain;
+  vertical-align: middle;
+}
+
+.img3_hero {
+  background-image: url("../images/tip-icon.png");
+  width: 24px;
+  height: 24px;
+}
+
+.img4_Hero {
+  background-image: url("../images/otgText.png");
+  width: 156px;
+  height: 26px;
+}
+.rightInsideheader h2{
+  color: #3e3e52;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.rightInsideheader h3{
+  color:#7e7e8c;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: .3px;
+  margin-top: -15px;
+}
+
+.rightInsideMain{
+
+  margin-top: 30px;
+}
+.rightInsideFooter {
+  display: flex;
+  margin: 10px;
+}
+.rightInsideFooter div {
+  flex: 1;
+}
+
+.title_footer1{
+    height: 24px;
+    font-size: 19px;
+    font-weight: bolder;
+    color: #1446a0;
+}
+
+.refund_footer{
+  font-size: 14px;
+  color: #34495e;
+  font-weight: 700;
+  margin-top: -5px;
+}
+
+.text_footer1{
+    width: 278px;
+    height: 60px;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .3px;
+    color: #34495e;
+    text-align: left;
+    margin-top: -17px
+}
+
+/* ----on time css block ends here -----*/
+
+/*----track block css starts here ---*/
+.trackBlock{
+    width: 1122px;
+    height: 524px;
+    background-color: #e8ecef;
+    margin: 50px auto;
+    
+}
+
+.trackBlockHeader{
+  display: flex;
+  
+}
+
+.trackBlockHeader div{
+  flex: 1;
+}
+
+.trackBlockHeader .leftInsideHeader{
+  background-image: url(../images/tmb_img.png);
+  width: 440px;
+  height: 282px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  margin-left: 71px;
+  margin-top: 26px;
+  background-size: contain;
+
+}
+
+.trackBlockHeader .rightInsideHeader .title{
+    height: 29px;
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
+    padding-top: 60px;
+    color: #4a4a4a;
+}
+
+.trackBlockHeader .rightInsideHeader .sub_txt{
+    padding-top: 20px;
+    font-size: 14px;
+    text-align: left;
+    padding-right: 76px;
+    height: 38px;
+    color: #4a4a4a;
+}
+
+.trackBlockHeader .rightInsideHeader .link_txt{
+    color: #4c8fdb;
+    padding: 8px 17px;
+    text-decoration: none;
+    border-radius: 2px;
+    border: 1px solid #4c8fdb;
+    text-align: center;
+    width: 80px;
+    height: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.border_line{
+  width: 940px;
+  height: 2px;
+  border-bottom: 2px solid #ddd;
+  
+  margin: 50px auto;
+
+}
+
+
+
+.trackBlockFooter{
+  display: flex;
+  margin-top: -20px !important;
+  width: 900px;
+  margin: 0 auto;
+
+}
+
+.trackBlockFooter div{
+  flex: 1;
+}
+
+.title_footer2{
+  letter-spacing: 1px;
+  color: #4a4a4a;
+  text-align: center;
+  font-size: 14px;
+}
+
+.value_footer{
+  font-size: 36px;
+  text-align: center;
+  color: #da4d52;
+}
+
+.text_footer2{
+  font-size: 14px;
+  text-align: center;
+  color: #4a4a4a;
+  width: 200px;
+  padding-left: 60px;
+}
+
+/*----track block css ends here---*/
+
+/*---convenience block css starts here---*/
+
+.convenienceBlock{
+   width: 1122px;
+   margin: 50px auto;
+   height: 630px;
+}
+
+
+.convenienceBlock article{
+  display: flex;
+}
+
+.convenienceBlock article .leftConvenienceDiv{
+  flex: 1;
+}
+
+.convenienceBlock article .rightConvenienceDiv{
+  flex: 1;
+}
+
+
+.rightConvenienceDiv{
+  background-image: url(../images/IOS_Android_device.png);
+  height: 700px;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 20px;
+  margin-left: 270px;
+}
+
+.leftconvheader{
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  margin-left: 50px;
+  width: 100%;
+}
+
+.paragraph{
+  margin-left: 50px;
+  font-size: 13px;
+  
+}
+
+.line_txt
+{
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 13px;
+  display: inline-block;
+  
+}
+
+/*---convenience block css ends here---*/
+
+/*---Promise block css starts here---*/
+
+.promiseBlock{
+  margin-bottom: 50px;
+  margin-top: -40px !important;
+  background-color: #ededed;
+  padding: 0;
+  width: 100%;
+  height: 650px;
+  border: 1px solid lightgrey;
+}
+
+.promiseBlock article{
+  display: flex;
+  justify-content: center;
+}
+
+.pbimage{
+  background-image: url(../images/promise.png);
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  text-indent: -9999px;
+  margin: 10px;
+  margin-left: 60px !important;
+  
+}
+
+.pbhead{
+  font-size: 24px;
+  color: #4a4a4a;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-align: center;
+  text-indent: -80px;
+  margin-top: -15px;
+}
+
+
+.insidepromiseBlock{
+  width: 1200px;
+  height: 400px;
+  background-color: white;
+  border: 1px solid lightgrey;
+  margin: 0 auto;
+  margin-top: -500px;
+  
+}
+
+.insidepromiseBlock article{
+  display: flex;
+  justify-content: space-evenly;
+  
+} 
+
+.insidepromiseBlock article div{
+  flex-basis: 25%;
+  border-right: 1px solid lightgrey;
+  height: 400px;
+  
+}
+
+.safety{
+  background-image: url(../images/safety.svg);
+}
+
+.cust_service{
+  background-image: url(../images/customer_care.png);
+}
+
+.low_price{
+  background-image: url(../images/lowest_Fare.png);
+}
+
+.unmatch_benefit{
+  background-image: url(../images/benefits.png);
+}
+
+
+.logos{
+  background-repeat: no-repeat;
+  width: 100px;
+  height: 100px;
+  background-size: contain;
+  text-indent: -9999px;
+  margin: 30px 100px;
+}
+
+.ip_middle{
+    color: #4a4a4a;
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: 1px;
+    word-spacing: 8px;
+    margin: 50px auto;
+    width: 215px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.ip_bottom{
+    margin-left: 15px;
+    margin-right: 15px;
+    color: #737373;
+    font-size: 14px;
+    font-weight: 500;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    line-height: 22px;
+}
+
+.sup_cust{
+  margin-top: -16px !important;
+}
+
+
+/*---Promise block css ends here---*/
+
+/*---award block css starts here--*/
+
+#awardBlock{
+  width: 100%;
+  height: 450px;
+  background-color: white;
+  padding: 0%;
+  margin-top: 50px;
+  text-transform: uppercase;
+  border-bottom: 1px solid lightgrey;
+}
+
+
+.awardHeader{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 600;
+  color: #4a4a4a;
+  margin-top: 75px;
+  box-sizing: border-box;
+}
+
+.awardMain{
+  display: flex;
+  width: 1122px;
+  margin: 0 auto;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+}
+
+.awardMain div{
+  flex-basis: 33%;
+}
+
+.image1{
+  background-image: url(../images/Business_Standard1.png);
+  height: 100px;
+  width: 100px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  margin-left: 75px;
+  margin-top: -75px;
+}
+
+.image2{
+  background-image: url(../images/Brand_Trust_Report.png);
+  height: 125px;
+  width: 100px;
+  background-repeat: no-repeat;
+  margin-left: 50px;
+  text-indent: -9999px;
+
+}
+
+.image3{
+  background-image: url(../images/Eye_for_Travel1.png);
+  height: 120px;
+  width: 100px;
+  background-repeat: no-repeat;
+  text-indent: -9999px;
+  margin-left: 30px;
+  margin-top: -45px;
+}
+
+.awardFooter{
+  display: flex;
+  width: 1122px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.awardFooter h5{
+  flex-basis: 33%;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: -40px;
+}
+
+.awardFooter h5 a{
+  text-decoration: none;
+  color: #4a4a4a;
+  font-weight: lighter;
+  line-height: 25px;
+  word-spacing: 2px;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-size: 14px;
+
+}
+
+/*---award block css ends here--*/
+
+/* ---global block css starts here--- */
+
+
+#globalBlock{
+  background-color: #f1f1f1;
+  margin-top: -30px;
+  border-bottom: 1px solid lightgrey;
+}
+
+.globalBlockContent{
+  width: 1100px;
+  margin: 30px auto;
+  
+}
+
+.globalBlockContent h1{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 50px;
+  
+}
+
+.globalBlockContent article{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.globalBlockContent article>div{
+  flex-basis: 33%;
+  display: flex;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.colombia p:first-child {
+  background: url(../images/flag.png) !important;
+  height: 80px;
+  width: 123px;
+  background-repeat: no-repeat !important;
+  background-position: 0px -614px !important;
+  text-indent: -9999px;
+}
+
+.india p:first-child {
+  background: url(../images/flag.png) !important;
+  height: 80px;
+  width: 123px;
+  background-repeat: no-repeat !important;
+  background-position: 0px -294px !important;
+  text-indent: -9999px;
+}
+
+.Indonesia p:first-child {
+  background: url(../images/flag.png) !important;
+  height: 80px;
+  width: 123px;
+  background-repeat: no-repeat !important;
+  background-position: 0px -213px !important;
+  text-indent: -9999px;
+}
+
+.malaysia p:first-child {
+  background: url(../images/flag.png) !important;
+  height: 80px;
+  width: 123px;
+  background-repeat: no-repeat !important;
+  background-position: 0px -374px !important;
+  text-indent: -9999px;
+}
+
+.peru p:first-child {
+  background: url(../images/flag.png) !important;
+  height: 80px;
+  width: 123px;
+  background-repeat: no-repeat !important;
+  background-position: 0px -454px !important;
+  text-indent: -9999px;
+}
+
+.singapore p:first-child {
+  background: url(../images/flag.png) !important;
+  height: 80px;
+  width: 123px;
+  background-repeat: no-repeat !important;
+  background-position: 0px -534px !important;
+  text-indent: -9999px;
+}
+
+
+
+
+.country {
+  text-align: center;
+  text-transform: uppercase;
+  color: #777;
+  font-size: 15px;
+}
+
+/*---- global block css ends here--- */
+
+/* ---growing block css starts here--- */
+
+#growingBlock{
+  width: 1200px;
+  margin: 30px auto;
+  height: 250px;
+}
+
+
+.blockHeader{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-top: 50px;
+}
+
+.gbMain{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -25px;
+  
+}
+
+.gbMain div{
+
+  flex-basis: 33%;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.mainHead{
+  text-align: center;
+  color: #737373;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.mainMain{
+  text-align: center;
+  color: #da4e52;
+  font-size: 46px;
+  font-weight: 400;
+}
+
+.mainFooter{
+  text-align: center;
+  width: 208px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10px;
+  word-spacing: 2px !important;
+  font-weight: lighter !important;
+  font-size: 14px;
+}
+/* ---growing block css ends here--- */
+
